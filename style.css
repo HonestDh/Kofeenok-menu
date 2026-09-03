@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #f5f5f5;
+    min-height: 100vh;
+    padding: 15px;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 15px 0;
+}
+
+h1 {
+    font-size: 1.6em;
+    color: #2d3436;
+    margin-bottom: 4px;
+    font-weight: 600;
+}
+
+.subtitle {
+    font-size: 0.85em;
+    color: #636e72;
+}
+
+.menu-label {
+    text-align: center;
+    padding: 12px 20px;
+    margin: 20px auto 25px auto;
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #2d3436;
+    border-bottom: 2px solid #2d3436;
+    width: 100%;
+    max-width: 300px;
+}
+
+.section {
+    background: #fff;
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+h2 {
+    color: #2d3436;
+    font-size: 1.1em;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #dfe6e9;
+    font-weight: 600;
+}
+
+.category-title {
+    color: #636e72;
+    font-size: 0.78em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin: 12px 0 8px 0;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    background: #f8f9fa;
+    border-radius: 5px;
+    transition: background 0.2s;
+}
+
+.menu-item:hover {
+    background: #e9ecef;
+}
+
+.menu-item.cocktail {
+    background: #fff8f0;
+}
+
+.menu-item.cocktail:hover {
+    background: #fdebd0;
+}
+
+.menu-item.kids {
+    background: #f0f9ff;
+}
+
+.menu-item.kids:hover {
+    background: #e3f2fd;
+}
+
+.item-name {
+    font-size: 1em;
+    font-weight: 500;
+    color: #2d3436;
+    margin-bottom: 4px;
+}
+
+.item-details {
+    color: #636e72;
+    font-size: 0.82em;
+    line-height: 1.3;
+}
+
+.item-price {
+    display: inline-block;
+    background: #2d3436;
+    color: #fff;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+footer {
+    text-align: center;
+    color: #636e72;
+    padding: 15px 0;
+    font-size: 0.85em;
+}
+
+@media (min-width: 601px) {
+    .menu-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
