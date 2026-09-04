@@ -108,6 +108,22 @@ h2 {
     background: #e3f2fd;
 }
 
+.menu-item.dessert {
+    background: #fff0f5;
+}
+
+.menu-item.dessert:hover {
+    background: #fde0e7;
+}
+
+.menu-item.lemonade {
+    background: #f0fff4;
+}
+
+.menu-item.lemonade:hover {
+    background: #e0f2e9;
+}
+
 .item-name {
     font-size: 1em;
     font-weight: 500;
